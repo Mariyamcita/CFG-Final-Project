@@ -823,7 +823,7 @@ section {
   border-radius: 4px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #6ab82a;
+  background: #777777;
 }
 @-webkit-keyframes animate-loading {
   0% {
