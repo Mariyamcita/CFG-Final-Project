@@ -66,13 +66,13 @@
         </div>
 
         <div class="form">
-          <form action="#" method="post" role="form" class="php-email-form">
+          <form action="" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-4 form-group">
-                <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter a valida date" required>
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="time" id="time" placeholder="Time" data-rule="text" data-msg="Please enter a valid time">
+                <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:3" data-msg="Please enter a valid time" required>
               </div>
               <div class="col-md-4 form-group">
 <select name="persons" class="form-control">
@@ -88,24 +88,19 @@
               </div>
               <div class="row">
                 <div class="col-md-4 form-group mt-3">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                 </div>
                 <div class="col-md-4 form-group mt-3">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your email" data-rule="email" data-msg="Please enter a valid email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your email" data-rule="email" data-msg="Please enter a valid email" required>
                 </div>
                 <div class="col-md-4 form-group mt-3">
-                  <input type="phone" class="form-control" name="phone" id="phone" placeholder="Your phone number" data-rule="email" data-msg="Please enter a valid email">
+                  <input type="phone" class="form-control" name="phone" id="phone" placeholder="Your phone number" data-rule="minlen:9" data-msg="Please enter a valid phone number" required>
                 </div>
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Let us know if you have any allergies" required></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="Let us know if you have any allergies"></textarea>
             </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Book now</button></div>
+            <div class="text-center mt-3"><button type="submit" id="booknow">Book now</button></div>
           </form>
         </div>
 
@@ -183,7 +178,8 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
 
   
   <script src="assets/js/main.js"></script>
